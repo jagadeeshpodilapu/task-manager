@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    // Target ES2020 features (async/await, optional chaining)
+    "target": "ES2020",
+
+    // Use CommonJS for Node.js compatibility
+    "module": "commonjs",
+
+    // Output directory for compiled files
+    "outDir": "./dist",
+
+    // Source code directory
+    "rootDir": "./src",
+
+    // Strict type checking (RECOMMENDED)
+    "strict": true, // Enable all strict checks
+    "noImplicitAny": true, // Error on implied 'any' types
+    "strictNullChecks": true, // Null and undefined handling
+    "strictFunctionTypes": true, // Function type checking
+    "noUnusedLocals": true, // Error on unused variables
+    "noUnusedParameters": true, // Error on unused parameters
+    "noImplicitReturns": true, // All code paths must return
+
+    // Module resolution
+    "esModuleInterop": true, // Import CommonJS as ES6 modules
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+
+    // Other useful options
+    "skipLibCheck": true, // Skip type checking of .d.ts files
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true, // Import JSON files
+
+    // Declaration files
+    "declaration": true, // Generate .d.ts files
+    "declarationMap": true, // Source maps for declarations
+
+    // Source maps for debugging
+    "sourceMap": true,
+
+    // Type definitions locations
+    "types": ["node"],
+    "typeRoots": ["./node_modules/@types", "./src/types"]
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist", "tests"]
+}
